@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="product-detail.css">
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    
+<!-- Header Section starts -->
+<header class="header">
+  <a href="/1.Homepage/index.html" class="logo">
+      <img src="/images/logo.png" alt="">
+  </a>
+
+  <nav class="navbar">
+      <a href="/1.Homepage/index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#products">Products</a>
+      <a href="#review">Review</a>
+      <a href="#contact">Contact</a>
+      <a href="#blogs">Blogs</a>
+  </nav>
+
+  <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div href="#" class="fa-solid fa-user"  id="user-btn"></div>
+      <!-- Username Dropdown Section start -->
+      <div class="sub-menu-wrap" >
+          <div class="sub-menu">
+              <div class="userinfo" id="user">
+                  <h2>Guess</h2>
+              </div>
+              <hr>
+
+              <a href="#" class="sub-menu-link">
+                  <i class="fa-solid fa-user"></i>
+                  <p>Edit Profile</p>
+                  <span>></span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                  <i class="fa-solid fa-gear"></i>
+                  <p>Setting & Privacy</p>
+                  <span>></span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <p>Help & Support</p>
+                  <span>></span>
+              </a>
+              <a href="/2.Login/login.html" class="sub-menu-link">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <p>Login</p>
+                  <span>></span>
+              </a>
+          </div>
+      </div>
+      <!-- Username Dropdown Section ends -->
+      <div class="fas fa-bars" id="menu-btn"></div>
+  </div>
+
+  <div class="search-form">
+      <input type="search" id="search-box" placeholder="Search for...">
+      <label for="search-box" class="fas fa-search"></label>
+  </div>
+  
+  <!-- Cart Section start -->
+  <div class="cart-items-container">
+      <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="/images/cart-item-1.jpg" alt="" srcset="">
+          <div class="content">
+              <h3>Cart Item 1</h3>
+              <div class="price">$15.99</div>
+          </div>
+      </div>
+
+      <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="/images/cart-item-2.jpg" alt="" srcset="">
+          <div class="content">
+              <h3>Cart Item 2</h3>
+              <div class="price">$12.99</div>
+          </div>
+      </div>
+
+      <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="/images/cart-item-3.jpg" alt="" srcset="">
+          <div class="content">
+              <h3>Cart Item 3</h3>
+              <div class="price">$8.49</div>
+          </div>
+      </div>
+
+      <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="/images/cart-item-4.jpg" alt="" srcset="">
+          <div class="content">
+              <h3>Cart Item 4</h3>
+              <div class="price">$15.99</div>
+          </div>
+      </div>
+
+      <a href="/5.Checkout/index.html" class="btn">Checkout Now!</a>
+  </div>
+  <!-- cart Section ends -->
+</header>
+<!-- Header Section ends -->
+
+
+
+<!-- Product Card Section starts -->
+<div class = "card-wrapper">
+  <div class = "card">
+    <!-- card left -->
+    <div class = "product-imgs">
+      <div class = "img-display">
+        <div class = "img-showcase">
+          <img src = "/images/product-5/product-5-main.webp" alt = "shoe image">
+          <img src = "/images/product-5/product-5-2.webp" alt = "shoe image">
+          <img src = "/images/product-5/product-5-3.webp" alt = "shoe image">
+          <img src = "/images/product-5/product-5-4.webp" alt = "shoe image">
+        </div>
+      </div>
+      <div class = "img-select">
+        <div class = "img-item">
+          <a href = "#" data-id = "1">
+            <img src = "/images/product-5/product-5-main.webp" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "2">
+            <img src = "/images/product-5/product-5-2.webp" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "3">
+            <img src = "/images/product-5/product-5-3.webp" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "4">
+            <img src = "/images/product-5/product-5-4.webp" alt = "shoe image">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- card right -->
+    <div class = "product-content">
+      <h2 class = "product-title">Ví Handmade Gập Đôi Ngang Mini - Barm S</h2>
+      <a href = "/1.Homepage/index.html" class = "product-link">visit W-Leather</a>
+      <div class = "product-rating">
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star-half-alt"></i>
+        <span>4.7 (21 đánh giá)</span>
+      </div>
+
+      <div class = "product-price">
+        <p class = "last-price">Giá cũ: <span>520.000 ₫</span></p>
+        <p class = "new-price">Giá mới: <span>420.000 ₫</span></p>
+      </div>
+
+      <div class = "product-detail">
+        <h2>Mô tả sản phẩm </h2>
+        <p>Chúng tôi khao khát tạo ra những sản phẩm mang tuyên ngôn mạnh mẽ về mỗi cá nhân. Từng thiết kế có câu chuyện riêng và bạn có thể lựa chọn đóng dấu, khắc tên, khắc lời nhắn yêu thương lên bề mặt sản phẩm</p>
+        <p>Nhờ đó, món phụ kiện trở thành món quà đặc biệt cho riêng bạn và những người quan trọng. 1 năm, 2 năm, hay 5 năm,... những lời động viên và yêu thương vẫn luôn ở đó – không phai mờ.</p>
+        <p></p>  
+        
+          <li>Color: <span>Nâu</span></li>
+          <li>Kho: <span>Còn hàng</span></li>
+          <li>Danh mục: <span>Ví da</span></li>
+          <li>Kích thước: <span>9.3 x 11.3 cm</span></li>
+          <li>Vận chuyển: <span>Free</span></li>
+          <li>Thương hiệu: <span>W-Leather</span></li>
+      </div>
+
+      <div class = "purchase-info">
+        <input type = "number" min = "0" value = "1">
+        <button type = "button" class = "btn">
+          Add to Cart <i class = "fas fa-shopping-cart"></i>
+        </button>
+        <button type = "button" class = "btn">So sánh</button>
+      </div>
+
+      <div class = "social-links">
+        <p>Share At: </p>
+        <a href = "#">
+          <i class = "fab fa-facebook-f"></i>
+        </a>
+        <a href = "#">
+          <i class = "fab fa-twitter"></i>
+        </a>
+        <a href = "#">
+          <i class = "fab fa-instagram"></i>
+        </a>
+        <a href = "#">
+          <i class = "fab fa-whatsapp"></i>
+        </a>
+        <a href = "#">
+          <i class = "fab fa-pinterest"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product Card Section ends -->
+    
+    <script src="product-detail.js"></script>
+  </body>
+</html>

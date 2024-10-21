@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root{
+    --theme-color:#000;
+    --color-1:wheat;
+    --color-2: rgb(85, 59, 11);
+    --black:#13131a;
+}
+/* Header Section */
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1rem 6%;
+    position: fixed;
+    top: 0; left: 0; right: 0; 
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 7rem;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+    background:url('/images/hinh-login/pattern.png') ;
+}
+body:after{
+    content: '';
+    position: fixed;
+    inset:0;
+    background-color: var(--theme-color);
+    width: 60%;
+    height: 100vh;
+    clip-path: polygon(0 100%,0 0,100% 0,70% 100%);
+    z-index: -1;
+      
+    }
+.login-card{
+    background-color:white;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.login-card a{
+    text-decoration: none;
+    color:var(--theme-color);
+}
+
+.column{
+    padding: 4rem;
+    
+}
+.column:last-child{
+    
+    background-size: cover;
+    position:relative;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background:url('/images/hinh-login/b1.svg') center; 
+    
+}
+.column:last-child::after{
+    content:"";
+    position: absolute;
+    background: linear-gradient(90deg, white, #ffffff68);
+    inset:0;
+      
+}
+.column:last-child *{
+    z-index: 1;
+    color: var(--theme-color);
+}
+
+
+.column h1{
+    margin-bottom: 15px;
+}
+.form-element{
+    width: 100%;
+    border: none;
+    background-color:  #f1f1f1;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: box-shadow .2s;
+}
+.form-element:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--theme-color);
+}
+input[type=checkbox]{
+   accent-color: var(--theme-color);
+   width: 16px;
+   height: 16px; 
+}
+form{
+    margin-top: 3rem;
+}
+form >*{
+    margin-top: 1rem;
+}
+button{
+    background-color:  var(--theme-color);
+    color:white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s;
+}
+button:active{
+    scale: .95;
+    background-color: darken(var(--theme-color));
+}
+.form-checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-left: 5px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-checkbox-item:hover{
+    letter-spacing: 0.01rem; 
+}
+.dn:hover{
+    letter-spacing: 0.01rem;
+}
+.social-buttons{
+    display: flex;
+    gap: 1rem;
+}
+.social-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    background-color: green;
+}
+.social-buttons a.facebook{
+    background-color: #3b5998;
+}
+.social-buttons a.twitter{
+    background-color: #55acee;
+}
+.social-buttons a.google{
+    background-color: #ea4335;
+}
+.social-buttons a:hover{
+    scale: .95;
+}
+/*back */
+.back-container{
+    display: flex;
+    gap: 1rem;
+}
+.back{
+    display: flex;
+    text-decoration: none;
+    margin: 12px 0;
+}
+.back p{
+    width: 100%;
+    text-transform: none;
+}
+.back:hover {
+    letter-spacing: 0.02rem;
+}
+
+.back:hover p{
+    font-weight: 600;
+}
+@media (max-width:992px){
+    .login-card{
+        display: block;
+        width: 500px;
+        text-align: center;
+    }
+    .flex{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .column:last-child{
+        display:none;
+    }
+    .social-buttons{
+        justify-content: center ;
+    }
+}

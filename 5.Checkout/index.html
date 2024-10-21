@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+        
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form action="">
+        <div class="row">
+
+            <div class="col">
+                <h3 class="title">Billing Address</h3>
+
+                <div class="inputBox">
+                    <span>Họ và tên:</span>
+                    <input type="text" placeholder="Nguyễn Văn A">
+                </div>
+                <div class="inputBox">
+                    <span>Email:</span>
+                    <input type="email" placeholder="example@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>Địa chỉ:</span>
+                    <input type="text" placeholder="Số nhà - Đường - Khu phố - Quận">
+                </div>
+                <div class="inputBox">
+                    <span>Thành phố:</span>
+                    <input type="text" placeholder="Hồ Chí Minh">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Quốc gia:</span>
+                        <input type="text" placeholder="Việt Nam">
+                    </div>
+                    <div class="inputBox">
+                        <span>Mã zip:</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h3 class="title">Payment</h3>
+
+                <div class="inputBox">
+                    <span>Cards Accepted:</span>
+                    <img src="/images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Tên chủ thẻ:</span>
+                    <input type="text" placeholder="NGUYEN VAN A">
+                </div>
+                <div class="inputBox">
+                    <span>Số thẻ:</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Tháng hết hạn:</span>
+                    <input type="text" placeholder="Tháng 1">
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Năm hết hạn:</span>
+                            <input type="number" placeholder="2023">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV:</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn" onclick="event.preventDefault(); openPopup()">Tiến hành thanh toán</button>
+
+        <a href="/1.Homepage/index.html">
+            <button class="back" type="button">⇦ Quay về trang chủ</button>
+        </a>
+    </form>
+
+    <!-- Popup -->
+
+    <div class="popup" id="popup">
+        <img src="/images/404-tick.png" alt="">
+        <h2>Đặt hàng thành công!</h2>
+        <p>Cảm ơn bạn đã đặt hàng. Chúng mình sẽ cố gắng giao hàng sớm nhất</p>
+        <button type="button" class="btn" onclick="closePopup()">OK</button>
+        <a href="/1.Homepage/index.html">
+            <button type="button" class="btn">Trở về trang chủ</button>
+        </a>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

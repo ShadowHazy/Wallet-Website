@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #544028, #d3ad7f);
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  border-radius: 2rem;
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  font-weight: 600;
+  background: #000;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #d3ad7f;
+  color: black;
+}
+
+.back{
+  background: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+
+/* Pop-Up Confirmation */
+
+.popup button{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.popup{
+  width: 400px;
+  background: linear-gradient(60deg, #544028, #d3ad7f);
+  border-radius: 1rem;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: var(--black);
+  visibility: hidden;
+  transition: transform 0.3s top 0.3s;
+}
+
+.popup p{
+  color: white;
+  text-transform: none;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.popup h2{
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 10px 0 10px;
+}
+
+.popup img{
+  position: relative;
+  width: 80px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px var(--main-color);
+}
+
+.open-popup{
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+}
